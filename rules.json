@@ -1,0 +1,237 @@
+{
+  "rules": [
+    {
+      "name": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "howdy",
+        "greetings",
+        "good morning",
+        "good afternoon",
+        "good evening"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What brings you here?",
+        "Hey! Nice to see you!",
+        "Greetings, human! How may I assist you?"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "farewell",
+        "exit",
+        "see ya",
+        "later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!",
+        "Farewell! It was nice chatting with you!",
+        "Until next time! 👋"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how do you do",
+        "how's it going",
+        "what's up",
+        "how are things",
+        "how's everything"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking! How about you?",
+        "All systems operational! How can I assist you?",
+        "I'm functioning perfectly! What can I do for you?",
+        "I'm feeling chatty today! How are you doing?"
+      ],
+      "priority": 2
+    },
+    {
+      "name": "name",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "your name",
+        "what are you called"
+      ],
+      "responses": [
+        "I'm ChatBot, your friendly rule-based assistant!",
+        "I'm called ChatBot. Nice to meet you!",
+        "I'm a simple rule-based chatbot. You can call me ChatBot."
+      ],
+      "priority": 2
+    },
+    {
+      "name": "age",
+      "patterns": [
+        "how old are you",
+        "what is your age",
+        "are you old"
+      ],
+      "responses": [
+        "I was created just recently, so I'm very young!",
+        "Age is just a number for a chatbot. I'm timeless!",
+        "I don't age like humans do. I'm forever young!"
+      ],
+      "priority": 3
+    },
+    {
+      "name": "help",
+      "patterns": [
+        "help",
+        "assist",
+        "support",
+        "what can you do",
+        "capabilities"
+      ],
+      "responses": [
+        "I can help with general questions, greetings, and simple conversations. Try saying hello, asking how I am, or asking about my name!",
+        "I'm a rule-based chatbot. I respond to patterns you provide. You can ask me about my name, how I am, or just have a chat!",
+        "I'm here to help! I can respond to greetings, answer simple questions, or just have a conversation with you. What would you like to talk about?"
+      ],
+      "priority": 2
+    },
+    {
+      "name": "weather",
+      "patterns": [
+        "weather",
+        "temperature",
+        "rain",
+        "snow",
+        "forecast",
+        "cloudy",
+        "sunny"
+      ],
+      "responses": [
+        "I don't have access to real-time weather data, but I hope it's nice where you are!",
+        "I wish I could check the weather for you, but I'm just a simple chatbot.",
+        "Weather? I'm not connected to any weather API, sorry! You might want to check a weather website."
+      ],
+      "priority": 4
+    },
+    {
+      "name": "time",
+      "patterns": [
+        "what time",
+        "time is it",
+        "current time",
+        "date",
+        "today's date"
+      ],
+      "responses": [
+        "I don't have a clock, but you can check your device for the current time!",
+        "I'm not connected to a time service, sorry! Check your system clock.",
+        "Time flies when you're having fun! But seriously, check your device for the time."
+      ],
+      "priority": 4
+    },
+    {
+      "name": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "appreciate it",
+        "much appreciated",
+        "thank"
+      ],
+      "responses": [
+        "You're welcome! Happy to help!",
+        "My pleasure! Anything else?",
+        "Anytime! That's what I'm here for.",
+        "Glad I could assist you!"
+      ],
+      "priority": 2
+    },
+    {
+      "name": "hobby",
+      "patterns": [
+        "what do you do",
+        "hobby",
+        "fun",
+        "entertain",
+        "what are you up to"
+      ],
+      "responses": [
+        "I love chatting with people! It's my favorite activity.",
+        "My hobby is processing information and responding to queries.",
+        "I enjoy having conversations and learning from humans like you!"
+      ],
+      "priority": 3
+    },
+    {
+      "name": "creator",
+      "patterns": [
+        "who created you",
+        "who made you",
+        "your creator",
+        "your maker"
+      ],
+      "responses": [
+        "I was created by a developer using Python and rule-based logic!",
+        "My creator built me with Python, JSON, and a lot of love for coding.",
+        "I'm a custom-built chatbot, crafted with care by a talented programmer."
+      ],
+      "priority": 3
+    },
+    {
+      "name": "emotion",
+      "patterns": [
+        "sad",
+        "happy",
+        "angry",
+        "excited",
+        "feeling",
+        "feel",
+        "emotion"
+      ],
+      "responses": [
+        "I don't have feelings like humans do, but I understand yours!",
+        "I'm just a program, but I can simulate empathy. How are you feeling?",
+        "I don't experience emotions, but I'm here to listen to yours!"
+      ],
+      "priority": 3
+    },
+    {
+      "name": "joke",
+      "patterns": [
+        "tell me a joke",
+        "joke",
+        "funny",
+        "make me laugh"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "Why don't programmers like nature? It has too many bugs!"
+      ],
+      "priority": 3
+    },
+    {
+      "name": "default",
+      "patterns": [
+        ".*"
+      ],
+      "responses": [
+        "I'm not sure I follow. Could you ask differently?",
+        "Interesting point! Tell me more about that.",
+        "I don't have a response for that yet. Can you rephrase?",
+        "Let's talk about something else. What's on your mind?",
+        "Hmm, that's a good question. I'll need to think about that.",
+        "I'm still learning. Could you ask that in a different way?"
+      ],
+      "priority": 999
+    }
+  ]
+}
